@@ -1,5 +1,17 @@
 {
-  "name": "staffed-sales-frontend-web-jar2",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/test-ui-library.umd.js",
+  "module": "./dist/test-ui-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/test-ui-library.es.js",
+      "require": "./dist/test-ui-library.umd.js"
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "name": "test-ui-library",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -34,12 +46,14 @@
     "vue-tsc": "Vue 3 command line Type-Checking tool base on IDE plugin Volar. Needed for: vue, vite, typescript"
   },
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "@vitejs/plugin-vue": "^5.1.3",
     "eslint": "^9.10.0",
     "eslint-plugin-vue": "^9.28.0",
     "typescript": "5.5.4",
     "typescript-eslint": "^8.6.0",
     "vite": "^5.4.5",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
     "vue-eslint-parser": "^9.4.3",
     "vue-tsc": "^2.1.6"
   }
