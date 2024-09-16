@@ -1,0 +1,46 @@
+{
+  "name": "staffed-sales-frontend-web-jar2",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "//dev": "start dev server",
+    "dev": "vite",
+    "//build": "build for production",
+    "build": "npm run type-check && vite build",
+    "//preview": "locally preview production build",
+    "preview": "npm run build && vite preview",
+    "//lint:dry": "start eslint parsing without changing files",
+    "lint:dry": "eslint --fix-dry-run",
+    "//lint:fix": "start eslint parsing with changing files",
+    "lint:fix": "eslint --fix",
+    "//type-check": "start compile and type-check validation",
+    "type-check": "vue-tsc --build"
+  },
+  "//dependencies": {
+    "vue": "An approachable, performant and versatile framework for building web user interfaces. Needed for: N/A"
+  },
+  "dependencies": {
+    "vue": "^3.5.6"
+  },
+  "//devDependencies": {
+    "@vitejs/plugin-vue": "Provides Vue 3 Single File Components support in to Vite. Needed for: vite",
+    "eslint": "TODO. Needed for: N/A",
+    "eslint-plugin-vue": "Plugin that allows ESLint to check vue files. Needed for: eslint",
+    "typescript": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. Needed for: N/A",
+    "typescript-eslint": "Enables ESLint to support TypeScript. Needed for: eslint",
+    "vite": "A modern JavaScript build tool that provides out-of-the-box support. Needed for: N/A",
+    "vue-eslint-parser": "Required for the plugin to parse vue files. Needed for: eslint-plugin-vue",
+    "vue-tsc": "Vue 3 command line Type-Checking tool base on IDE plugin Volar. Needed for: vue, vite, typescript"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.3",
+    "eslint": "^9.10.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "typescript": "5.5.4",
+    "typescript-eslint": "^8.6.0",
+    "vite": "^5.4.5",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.1.6"
+  }
+}
