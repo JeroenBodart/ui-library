@@ -9,9 +9,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "src/index.ts"),
-      name: "BrianComponentLibrary",
+      name: "ComponentLibrary",
       // the proper extensions will be added
-      fileName: "ui-library",
+      fileName: "index",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

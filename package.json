@@ -2,13 +2,19 @@
   "name": "ui-library",
   "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
-  "main": "./dist/ui-library.umd.cjs",
-  "module": "./dist/ui-library.js",
+  "files": ["dist", "index.d.mts"],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/ui-library.js",
-      "require": "./dist/ui-library.umd.cjs"
+      "import": {
+        "types": "./index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     },
     "./style.css": "./dist/style.css"
   },
