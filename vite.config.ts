@@ -18,7 +18,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       name: "GithubPackagesUiLibrary",
-      fileName: (format) => `test-ui-library.${format}.js`,
+      fileName: (format) => `ui-library.${format}.js`,
     },
 
     rollupOptions: {

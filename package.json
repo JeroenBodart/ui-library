@@ -2,16 +2,16 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/test-ui-library.umd.js",
-  "module": "./dist/test-ui-library.es.js",
+  "main": "./dist/ui-library.umd.js",
+  "module": "./dist/ui-library.es.js",
   "exports": {
     ".": {
-      "import": "./dist/test-ui-library.es.js",
-      "require": "./dist/test-ui-library.umd.js"
+      "import": "./dist/ui-library.es.js",
+      "require": "./dist/ui-library.umd.js"
     }
   },
   "types": "./dist/types/index.d.ts",
-  "name": "test-ui-library",
+  "name": "ui-library",
   "private": true,
   "version": "1.0.0",
   "type": "module",
