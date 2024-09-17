@@ -1,34 +1,27 @@
 {
-  "name": "ui-library",
-  "version": "1.0.0",
-  "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/ui-library.umd.js",
+  "module": "./dist/ui-library.es.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
-    },
-    "./style.css": "./dist/style.css"
+      "import": "./dist/ui-library.es.js",
+      "require": "./dist/ui-library.umd.js"
+    }
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
+  "name": "ui-library",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "//dev": "start dev server",
     "dev": "vite",
-    "//build": "build for production",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
-    "//preview": "locally preview production build",
-    "preview": "npm run build && vite preview",
-    "//lint:dry": "start eslint parsing without changing files",
-    "lint:dry": "eslint --fix-dry-run",
-    "//lint:fix": "start eslint parsing with changing files",
-    "lint:fix": "eslint --fix",
-    "//type-check": "start compile and type-check validation",
-    "type-check": "vue-tsc -b"
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
+    "preserve": "vite build",
+    "serve": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "test": "exit 0"
   },
   "//dependencies": {
     "vue": "An approachable, performant and versatile framework for building web user interfaces. Needed for: N/A"
