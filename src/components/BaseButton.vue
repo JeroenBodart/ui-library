@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-type BaseButtonProps = {
+export type BaseButtonProps = {
   size?: number;
   color?: string;
 };
