@@ -22,7 +22,7 @@ export default defineConfig({
       formats: ["es"]
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime"],
+      external: ["vue"],
       input: Object.fromEntries(
         // https://rollupjs.org/configuration-options/#input
         glob.sync("lib/**/*.{ts,tsx}", {
