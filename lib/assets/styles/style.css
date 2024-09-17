@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('/lib/assets/fonts/Roboto-Regular.ttf') format('ttf');
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+#appButton {
+    background-color: red !important;
+}

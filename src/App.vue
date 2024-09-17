@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import AppButton from "../lib/components/button/AppButton.vue";
+
 </script>
 
 <template>
-    <AppButton>Click me</AppButton>
-  <p>Test</p>
+  <div />
 </template>
