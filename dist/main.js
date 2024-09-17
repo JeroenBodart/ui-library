@@ -1,5 +1,5 @@
-import { defineComponent as r, useCssVars as p, computed as s, openBlock as l, createElementBlock as u, renderSlot as c } from "vue";
-import './assets/main.css';const a = { id: "appButton" }, d = /* @__PURE__ */ r({
+import { defineComponent as s, useCssVars as p, computed as r, openBlock as u, createElementBlock as c, renderSlot as a } from "vue";
+import './assets/main.css';const l = { id: "appButton" }, i = /* @__PURE__ */ s({
   __name: "AppButton",
   props: {
     size: { default: 16 },
@@ -10,15 +10,12 @@ import './assets/main.css';const a = { id: "appButton" }, d = /* @__PURE__ */ r(
       "98e5bef4": e.color,
       "613a0e26": n.value
     }));
-    const o = t, n = s(() => `${o.size}px`);
-    return (e, f) => (l(), u("button", a, [
-      c(e.$slots, "default")
+    const o = t, n = r(() => `${o.size}px`);
+    return (e, d) => (u(), c("button", l, [
+      a(e.$slots, "default")
     ]));
   }
-}), i = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: d
-}, Symbol.toStringTag, { value: "Module" }));
+});
 export {
   i as AppButton
 };
