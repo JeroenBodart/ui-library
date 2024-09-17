@@ -6,11 +6,11 @@
   "module": "./dist/ui-library.es.js",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/ui-library.es.js",
       "require": "./dist/ui-library.umd.js"
     }
   },
-  "types": "./dist/types/index.d.ts",
   "name": "ui-library",
   "version": "1.0.0",
   "type": "module",
