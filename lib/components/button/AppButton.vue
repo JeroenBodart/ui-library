@@ -14,7 +14,10 @@ const fontSize = computed(() => `${props.size}px`);
 </script>
 
 <template>
-  <button id="appButton">
+  <button
+    id="appButton"
+    class="font-bold"
+  >
     <slot />
   </button>
 </template>
