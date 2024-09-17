@@ -27,6 +27,10 @@ export default ts.config(
       "no-multi-spaces": ["error"],
       // we want to leave unused vars in the code
       "@typescript-eslint/no-unused-vars": "off",
+      // we want to allow empty objects
+      "@typescript-eslint/no-empty-object-type": "off",
+      // we want to allow any type
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 
@@ -48,6 +52,10 @@ export default ts.config(
       "no-multi-spaces": ["error"],
       // we want to leave unused vars in the code
       "@typescript-eslint/no-unused-vars": "off",
+      // we want to allow empty objects
+      "@typescript-eslint/no-empty-object-type": "off",
+      // we want to allow any type
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 
@@ -72,6 +80,10 @@ export default ts.config(
       "no-multi-spaces": ["error"],
       // we want to leave unused vars in the code
       "@typescript-eslint/no-unused-vars": "off",
+      // we want to allow empty objects
+      "@typescript-eslint/no-empty-object-type": "off",
+      // we want to allow any type
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 );

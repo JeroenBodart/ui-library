@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed } from "vue";
-type BaseButtonProps = {
+type AppButtonProps = {
   size?: number;
   color?: string;
 };
 
-const props = withDefaults(defineProps<BaseButtonProps>(), {
+const props = withDefaults(defineProps<AppButtonProps>(), {
   size: 16,
   color: "skyblue",
 });
@@ -14,13 +14,13 @@ const fontSize = computed(() => `${props.size}px`);
 </script>
 
 <template>
-  <button id="baseButton">
+  <button id="appButton">
     <slot />
   </button>
 </template>
 
 <style>
-#baseButton {
+#appButton {
   padding: 1rem 2rem;
   cursor: pointer;
   border: none;
