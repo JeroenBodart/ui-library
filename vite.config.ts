@@ -13,7 +13,7 @@ export default defineConfig({
     libInjectCss(),
     dts({
       tsconfigPath: resolve(__dirname, "tsconfig.lib.json"),
-    }),
+    })
   ],
   build: {
     copyPublicDir: false,
@@ -45,4 +45,4 @@ export default defineConfig({
       }
     }
   }
-})
+});

@@ -1,5 +1,8 @@
 {
   "files": [],
+  "include": [
+    "env.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.app.json"
