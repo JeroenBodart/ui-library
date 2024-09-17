@@ -1,25 +1,29 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
 import vue from "@vitejs/plugin-vue";
+import path from "path";
 
-// https://vitejs.dev/config/
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+
 export default defineConfig({
-  plugins: [vue()],
-  build: {
-    lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, "src/index.ts"),
-      name: "ComponentLibrary",
-      // the proper extensions will be added
-      fileName: "index",
+  plugins: [vue(), cssInjectedByJsPlugin()],
+  resolve: {
+    alias: {
+      "@/": new URL("./src/", import.meta.url).pathname,
     },
+  },
+
+  build: {
+    cssCodeSplit: true,
+    target: "esnext",
+    lib: {
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: "UiLibrary",
+      fileName: (format) => `ui-library.${format}.js`,
+    },
+
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
       external: ["vue"],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
         globals: {
           vue: "Vue",
         },
